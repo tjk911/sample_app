@@ -58,7 +58,7 @@ describe "Static pages" do
       click_link "Home"
       click_link "Sign up now!"
       expect(page).to have_title(full_title('Sign up'))
-      click_link "sample app"
+      find("#link").click
       expect(page).to have_title(full_title(''))
   end
 end
