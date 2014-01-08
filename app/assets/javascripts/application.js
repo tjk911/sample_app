@@ -15,7 +15,5 @@
 //= require turbolinks
 //= require_tree .
 
-//= require foundation
-
+//= require foundation 
 $(function(){ $(document).foundation(); });
-//= require foundation/foundation.dropdown
