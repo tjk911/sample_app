@@ -17,7 +17,7 @@
     <%= render 'layouts/header' %>	
 		<div class="row">
 			<% flash.each do |key, value| %>
-			    <%= content_tag(:div, value, :"data-alert" =>"", class: "alert-box #{key}" )%>
+			    <%= content_tag(:div, value, :"data-alert" =>"", class: "alert-box #{key} round" )%>
 			<% end %>
 			<%= yield %>
 			<%= debug(params) if Rails.env.development? %>
