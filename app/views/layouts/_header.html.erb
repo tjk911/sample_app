@@ -19,22 +19,21 @@
             <% if signed_in? %>
                 <li><%= link_to "Users", '#' %></li>
                 
-                <li><a href="#" data-dropdown="dropdown1" data-options="is_hover:true">
-                    Account
-                  </a></li>
-                  
-                
+                <li><a href="#" data-dropdown="dropdown1" data-options="is_hover:true">Account</a></li>       
               <% else %>
                 <li><%= link_to "Sign in", signin_path %></li>
               <% end %>
         </ul><!-- Left Nav Section -->
     </section>
 </nav>
-<ul id="dropdown1" class="f-dropdown" data-dropdown-content>
-  <li><%= link_to "Profile", current_user %></li>
-  <li><%= link_to "Settings", '#' %></li>
-  <li class="divider"></li>
-  <li>
-    <%= link_to "Sign out", signout_path, method: "delete" %>
-  </li>
-</ul>
+
+<% if signed_in? %>
+  <ul id="dropdown1" class="f-dropdown" data-dropdown-content>
+    <li><%= link_to "Profile", current_user %></li>
+    <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+    <li class="divider"></li>
+    <li>
+      <%= link_to "Sign out", signout_path, method: "delete" %>
+    </li>
+  </ul>
+<% end %>
