@@ -11,4 +11,5 @@ Made some slight tweaks, running Foundation instead of Bootstrap
 # To do
 
 ~~1. Figure out a cleaner way to implement the Foundation js files.~~
+
 2. Update authorization (Chapt 9.2)
