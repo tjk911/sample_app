@@ -16,4 +16,4 @@ Tweaked to use Foundation-will_paginate instead, and user spec set to select for
 
 ~~2. Update authorization (Chapt 9.2)~~
 
-3. Start partial refactoring (Chapt 9.3.2)
+3. Start partial refactoring (Chapt 9.3.4)
