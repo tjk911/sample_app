@@ -17,7 +17,7 @@
             <li><%= link_to "Help",    help_path %></li>
 
             <% if signed_in? %>
-                <li><%= link_to "Users", '#' %></li>
+                <li><%= link_to "Users", users_path %></li>
                 
                 <li><a href="#" data-dropdown="dropdown1" data-options="is_hover:true">Account</a></li>       
               <% else %>
