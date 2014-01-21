@@ -82,7 +82,7 @@ describe "Authentication" do
 
           describe "when signing in again" do
             before do
-              # delete signout_path //commented out following update in 9.6 exercise listing 9.51
+              #delete signout_path #//commented out following update in 9.6 exercise listing 9.51
               visit signin_path
               fill_in "Email",    with: user.email
               fill_in "Password", with: user.password
