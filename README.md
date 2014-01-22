@@ -18,6 +18,7 @@ Tweaked to use Foundation-will_paginate instead, and user spec set to select for
 
 ~~3. Start partial refactoring (Chapt 9.3.4)~~
 
+~~6. Start on proto feed (10.3.3)~~
+
 4. Figure out method to toggle admin status independently
 5. Figure out error on undefined method "update_attributes" for delete signout_path
-~~6. Start on proto feed (10.3.3)~~
